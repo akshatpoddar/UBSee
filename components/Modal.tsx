@@ -43,9 +43,7 @@ const TRANSFORMATIONS_CONTENT = <>
     </ol>
     
     Let&#39;s say you want to group the results of the query on courses by the instructor name and calculate the avergae for those sections (grouped by instructors). This can be achieved with a transform object of the following form:</p>
-    <pre><code className="lang-typescript"><span className="hljs-comment">/*
-    This transformations object will group the query results by instructor and calculate the average for each group.
-    */</span>
+    <pre><code className="lang-typescript"><span className="hljs-comment"></span>
     <span className="hljs-selector-tag">TRANSFORMATIONS</span>: &#123;
     <span className="hljs-attribute">GROUP</span>: [<span className="hljs-string">"sections_instr"</span>],
     APPLY: [&#123;

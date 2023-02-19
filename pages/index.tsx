@@ -1,4 +1,5 @@
 import axios, { AxiosError, AxiosInstance } from 'axios';
+import { randomUUID } from 'crypto';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v1 as uuidv4 } from 'uuid';
@@ -181,7 +182,7 @@ export default function Home() {
         <FilterDropdown addFilter={addFilter} addFilterBtnState={addFilterBtnState} key={uuidv4()} id={uuidv4()}/>
         {filterComponents.map(elem => {
           return (
-            <div className='flex flex-row'>
+            <div className='flex flex-row' key={uuidv4()}>
               <HorizontalSpacer width={elem[0]} />
               {elem[1]}
             </div> 
